@@ -38,8 +38,8 @@ function renderTasks() {
         li.innerHTML = `
         <span> ${task.text}</span>
         <div class = "actions">
-            <button class = "done-btn" onclick = "toggleDone(${task.id})">
             //here if you select undo you go back to see done and if you slelect odne you will see undo that can take you back tp done
+            <button class = "done-btn" onclick = "toggleDone(${task.id})">
             ${task.done ? 'Undo' : 'Done'}
             </button>
             <button class = "delete-btn" onclick = "deleteTask(${task.id})">Delete </button>
