@@ -1,0 +1,83 @@
+/* style.css */
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  background: #fff;
+  border-radius: 8px;
+  padding: 24px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+h1 { margin-bottom: 4px; }
+
+#task-count {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.input-row {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px 16px;
+  background: #4f46e5;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover { background: #4338ca; }
+
+ul { list-style: none; padding: 0; margin: 0; }
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: #fafafa;
+}
+
+li.done span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.actions { display: flex; gap: 6px; }
+
+.done-btn {
+  background: #10b981;
+  font-size: 12px;
+  padding: 6px 10px;
+}
+
+.delete-btn {
+  background: #ef4444;
+  font-size: 12px;
+  padding: 6px 10px;
+}
