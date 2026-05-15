@@ -31,6 +31,7 @@ function renderTasks() {
     taskList.innerHTML = ''
 
     //below says for every task, create a new list for it and when done add done
+    //here if you select undo you go back to see done and if you slelect odne you will see undo that can take you back tp done
     tasks.forEach((task) => {
         const li = document.createElement('li')
         if (task.done) li.classList.add('done')
@@ -38,7 +39,6 @@ function renderTasks() {
         li.innerHTML = `
         <span> ${task.text}</span>
         <div class = "actions">
-            //here if you select undo you go back to see done and if you slelect odne you will see undo that can take you back tp done
             <button class = "done-btn" onclick = "toggleDone(${task.id})">
             ${task.done ? 'Undo' : 'Done'}
             </button>
